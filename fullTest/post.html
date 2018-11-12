@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <link rel="stylesheet" href="whatever-you-want.css">
+  <script src="postjs.js"></script>
+</head>
+
+<body>
+  <h2>POST TEST IN ELM - PYTHON</h2>
+  <code>model is an integer initialized at 0.</code><br>
+  <code>Elm sends a HTTP request (POST) onto a server made with Python Flask. A restfull API handles the Request and returns a JSON</code><br>
+  <code>Elm then Decodes that JSON to get an integer an updates the model variable to 1 (which is the data from the JSON).</code><br>
+  <code>To determine if the Web App Architecture works front-end with back-end, a 1 should appear.</code>
+  <br><br>
+  <code>ELM CODE STARTS HERE:</code><br>
+  <br>
+  <div id="elm"></div>
+  <script>
+  var app = Elm.Main.init({
+    node: document.getElementById('elm')
+  });
+  </script>
+</body>
+</html>
